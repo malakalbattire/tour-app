@@ -1,0 +1,13 @@
+<p>register works!</p>
+<form (ngSubmit)="userRegister()">
+    <div>
+        <label>username</label>
+        <input type= "text" name="name "  [(ngModel)]="user.name"  >
+    </div>
+   
+<br>
+   <label>password</label>
+   <input  name="passward" [(ngModel)]="user.passward">
+   
+   <button> register</button>
+</form>

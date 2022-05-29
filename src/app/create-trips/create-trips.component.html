@@ -1,0 +1,60 @@
+<p>create-trips works!</p>
+<h1 mat-dialog-title>create trips </h1>
+
+<div style="text-align: center;">
+
+  <form (ngSubmit)= "onSubmit()">
+
+
+
+        <div class="form-group">
+            <label>tripDestination </label>
+            <input type="text" class="form-control"id = "tripDestination" 
+                  [(ngModel)]= "trips.tripDestination" name= "tripDestination" >
+            
+            
+                  <div class= "form-group">
+                     <label> createdDate</label>
+                     <input type="text" class="form-control"id = "city" 
+                     [(ngModel)]= "trips.city" name=  "city" >
+               
+                  </div>
+            
+                  <div class= "form-group">
+                     <label> id</label>
+                     <input type="text" class="form-control"id = "date" 
+                     [(ngModel)]= "trips.date" name= "date" >
+               
+                  </div>
+               
+            
+                  <div class= "form-group">
+                     <label> lastModifiedBy</label>
+                     <input type="text" class="form-control"id = "timeFrom" 
+                     [(ngModel)]= "trips.timeFrom" name= "timeFrom" >
+               
+                  </div>
+            
+                  <div class= "form-group">
+                     <label> lastModifiedDate</label>
+                     <input type="text" class="form-control"id = "timeTo" 
+                     [(ngModel)]= "trips.timeTo" name= "timeTo" >
+               
+                  </div>
+            
+            
+            
+            </div>
+            
+   
+            <button routerLink='/create-trips' mat-menu-itemtype="submit" onclick="alert('task have creatDate')" class="btn btn-info" > Submit </button>
+            
+            <button routerLink='/trips' mat-menu-item >back</button>
+
+            
+            </form>
+            
+
+
+
+
